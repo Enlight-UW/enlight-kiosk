@@ -5,7 +5,10 @@
  * Defines behavior for the kiosk app.
  */
 
-function KioskController($scope) {  
+var app = angular.module('kioskApp', []);
+
+
+var kioskController = function KioskController($scope) {  
     $scope.valves = [
         {name:'V1', active:false, disabled:false, x: .1, y: .1,},
         {name:'V2', active:false, disabled:false, x: .2, y: .2},
@@ -34,3 +37,5 @@ function KioskController($scope) {
         {name:'HR', active:false, disabled:false, x: .2, y: .2}        
     ];
 }
+
+app.controller('KioskController', kioskController);
