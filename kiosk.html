@@ -4,17 +4,16 @@ kiosk.html
 Main page for the Kiosk webapp.
 -->
 <!DOCTYPE html>
-<html data-ng-app="myApp">
+<html data-ng-app="">
     <head>
         <title>Fountain Kiosk</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
     </head>
     <body>
-        {{1 + 2}}
         <div data-ng-controller="KioskController">
             <div data-ng-repeat="valve in valves">
-                <a href="#" class="{{getClassForValve(valve.name)}}">{{valve.name}}</a>
+                <a href="#" class="{{valve.class}}">{{valve.name}}</a>
             </div>
         </div>
         
