@@ -31,4 +31,6 @@ body {
     left: -50%;
     top: -50%;
     border-radius: 50%;
+    height: 3em;
+    width: 3em;
 }
