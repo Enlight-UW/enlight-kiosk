@@ -28,9 +28,9 @@ body {
  */
 .valveButton {
     position: relative;
-    left: -50%;
-    top: -50%;
+    left: -24px;
+    top: -24px;
     border-radius: 50%;
-    height: 3em;
-    width: 3em;
+    height: 48px;
+    width: 48px;
 }

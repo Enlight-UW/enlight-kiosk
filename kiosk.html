@@ -15,21 +15,22 @@ Main page for the Kiosk webapp.
         <div>
             <div data-ng-repeat="valve in valves">
                 <span class="valveButtonContainer"
-                      style="position: absolute; left:{{valve.x}}%; top:{{valve.y}}%">
+                      style="position: absolute;
+                      left:{{100 * (valve.x/bgWidth)}}%;
+                      top:{{100 * (valve.y/bgHeight)}}%">   
                     <!-- This span is used as a document flow container for the
                          buttons. We want to use CSS to center the buttons on
                          a given x,y pair, so we make them children of a
                          container with the same size so that top:-50% will move
                          their vertical center to the right place (same with
                          left/horizontal). -->
-                    <a href="#" class="{{valve.class}} valveButton">
-                        {{valve.name}}
-                    </a>
+                    <a href="#" id="{{valve.name}}button" class="{{valve.class}} valveButton">a</a>
                 </span>
             </div>
         </div>
 
         <script src="js/jquery-2.0.3.min.js"></script>
+        <script src="js/spin.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/angular.min.js"></script>
         <script src="js/kiosk.js"></script>
