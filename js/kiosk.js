@@ -9,6 +9,7 @@ var app = angular.module('kioskApp', []);
 
 
 var kioskController = function KioskController($scope) {
+    //The (x,y) pair dictates the center point at which the valve should appear.
     $scope.valves = [
         {name: 'V1', active: false, disabled: false, x: 36.52, y: 20.83, class: 'btn'},
         {name: 'V2', active: false, disabled: false, x: 31.25, y: 24.48, class: 'btn'},

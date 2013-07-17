@@ -8,7 +8,7 @@
 
 
 
-/**
+/*
  * Stretched background image for the body - keeps the buttons percentage-wise
  * where they should be. Since we explicitly choose the background image size
  * to match the Kiosk's hardware aspect ratio, this solution will allow us to
@@ -19,4 +19,16 @@
 body {
     background: url('../img/fountain.jpg') no-repeat center center fixed;
     background-size: 100% 100%;
+}
+
+/*
+ * Since our valve positions are given in xy of the actual valve, we'll want to
+ * center the button on that point. So offset us by -50% in each direction. Also
+ * these buttons are round and we'll apply that style here.
+ */
+.valveButton {
+    position: relative;
+    left: -50%;
+    top: -50%;
+    border-radius: 50%;
 }
