@@ -1,0 +1,22 @@
+/* 
+    Document   : kiosk
+    Created on : Jul 17, 2013, 9:52:29 AM
+    Author     : akersten
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+
+
+/**
+ * Stretched background image for the body - keeps the buttons percentage-wise
+ * where they should be. Since we explicitly choose the background image size
+ * to match the Kiosk's hardware aspect ratio, this solution will allow us to
+ * account for small variations in viewport size like toolbars. Won't be pretty
+ * on displays of aspect ratios, but it'll get the job done (and we don't have a
+ * good way to scale the button positions for other sizes anyway).
+ */
+body {
+    background: url('../img/fountain.jpg') no-repeat center center fixed;
+    background-size: 100% 100%;
+}

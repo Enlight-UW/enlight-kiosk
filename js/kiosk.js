@@ -20,8 +20,8 @@ var kioskController = function KioskController($scope) {
         {name: 'V8', active: false, disabled: false, x: 21.39, y: 65.10, class: 'btn'},
         {name: 'V9', active: false, disabled: false, x: 24.41, y: 71.22, class: 'btn'},
         {name: 'V10', active: false, disabled: false, x: 26.46, y: 77.21, class: 'btn'},
-        {name: 'VC', active: false, disabled: false, x: 10, y: 30, class: 'btn'},
-        {name: 'VR', active: false, disabled: false, x: 11, y: 32, class: 'btn'},
+        {name: 'VC', active: false, disabled: false, x: 41.40, y: 91.02, class: 'btn'},
+        {name: 'VR', active: false, disabled: false, x: 36.04, y: 85.03, class: 'btn'},
         {name: 'H1', active: false, disabled: false, x: 62.60, y: 44.01, class: 'btn'},
         {name: 'H2', active: false, disabled: false, x: 67.58, y: 47.27, class: 'btn'},
         {name: 'H3', active: false, disabled: false, x: 71.58, y: 50.65, class: 'btn'},
@@ -32,8 +32,8 @@ var kioskController = function KioskController($scope) {
         {name: 'H8', active: false, disabled: false, x: 71.58, y: 62.24, class: 'btn'},
         {name: 'H9', active: false, disabled: false, x: 67.68, y: 63.93, class: 'btn'},
         {name: 'H10', active: false, disabled: false, x: 58.30, y: 63.15, class: 'btn'},
-        {name: 'HC', active: false, disabled: false, x: .2, y: .2, class: 'btn'},
-        {name: 'HR', active: false, disabled: false, x: .2, y: .2, class: 'btn'}
+        {name: 'HC', active: false, disabled: false, x: 47.75, y: 38.15, class: 'btn'},
+        {name: 'HR', active: false, disabled: false, x: 42.97, y: 43.88, class: 'btn'}
     ];
 
     $scope.getValveByName = function(name) {
