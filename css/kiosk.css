@@ -28,9 +28,34 @@ body {
  */
 .valveButton {
     position: relative;
-    left: -24px;
-    top: -24px;
+    display: block;
+    background-color: #EEE;
+    left: -32px;
+    top: -32px;
     border-radius: 50%;
-    height: 48px;
-    width: 48px;
+    height: 64px;
+    width: 64px;
 }
+
+.idle {
+    animation-name: idleGlow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier;
+}
+
+@keyframes idleGlow {
+    from {
+    box-shadow: 0px 0px 0px #000;
+    
+}
+to {
+    box-shadow: 0px 0px 0px #000;
+}
+
+50% {
+    box-shadow: 0px 0px 24px #9acbfd;
+    background-color: #deeeff;
+}
+}
+
