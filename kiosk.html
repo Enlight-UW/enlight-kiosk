@@ -13,7 +13,7 @@ Main page for the Kiosk webapp.
     <body data-ng-controller="KioskController">
         <div>
             <div data-ng-repeat="valve in valves">
-                <a href="#" class="{{valve.class}}">{{valve.name}}</a>
+                <a href="#" class="{{valve.class}}" style="position: absolute; left:{{valve.x}}%; top:{{valve.y}}%">{{valve.name}}</a>
             </div>
         </div>
         
