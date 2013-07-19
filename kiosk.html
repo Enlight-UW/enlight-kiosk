@@ -24,8 +24,8 @@ Main page for the Kiosk webapp.
                          container with the same size so that top:-50% will move
                          their vertical center to the right place (same with
                          left/horizontal). -->
-                    <a href="#" id="{{valve.name}}button" class="valveButton {{valve.class}}"
-                       data-ng-click="{{toggle(valve.name)}}"> </a>
+                    <a href="#" id="{{valve.name}}button" class="valveButton {{computeValveClass(valve)}}"
+                       data-ng-click="{{toggle(valve.active)}}" style="{{computeValveStyle(valve)}}"> </a>
                 </span>
             </div>
         </div>
